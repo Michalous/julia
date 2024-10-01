@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julia Set</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Julia Set</h1>
+    <h5>Hover over Mandelbrot set to display corresponding Julia set.</h5>
+    <div>
+        <canvas id="myCanvas" width="500" height="500"></canvas>
+        <canvas id="juliaCanvas" width="500" height="500"></canvas>
+    </div>
+    <div>
+        <p id="coords">Mouse Coordinates: (0, 0)</p>
+        <!-- <h4>Level of zoom: 2<sup id="showZoom">0</sup></h4> -->
+    </div>
+    <script src="zooming.js"></script>
+</body>
+</html>
