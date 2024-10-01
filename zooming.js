@@ -28,7 +28,7 @@ canvas.addEventListener('mousemove', function(evt) {
     const mousePos = getMousePos(canvas, evt);
     const newX = convertToNewRange(mousePos.x, 0, 500, centerX - rangeX / 2, centerX + rangeX / 2);
     const newY = convertToNewRange(mousePos.y, 0, 500, centerY + rangeY / 2, centerY - rangeY / 2);
-    const message = 'Mouse Coordinates: (' + newX + ', ' + newY + ')';
+    const message = 'Mouse Coordinates: (' + newX.toFixed(3) + ', ' + newY.toFixed(3) + ')';
     coordsDisplay.textContent = message;
     loopOverJuliaCanvas(newX, newY)
 });
@@ -38,7 +38,7 @@ canvas.addEventListener('click', function(evt) {
     const mousePos = getMousePos(canvas, evt);
     // const newX = convertToNewRange(mousePos.x, 0, 500, centerX - rangeX / 2, centerX + rangeX / 2);
     // const newY = convertToNewRange(mousePos.y, 0, 500, centerY + rangeY / 2, centerY - rangeY / 2);
-    const message = 'Mouse Coordinates: (' + newX + ', ' + newY + ')';
+    const message = 'Mouse Coordinates: (' + newX.toFixed(3) + ', ' + newY.toFixed(3) + ')';
     coordsDisplay.textContent = message;
 
     loopOverCanvas()
